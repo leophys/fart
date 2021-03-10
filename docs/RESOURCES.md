@@ -38,6 +38,13 @@ for free.
 For the client interface, I have very clearly in mind the UX from
 [github.com/bettercap/bettercap][b]. It is a repl with a custom set of commands.
 
+### TLS
+
+TLS is hard; TLS done properly is crazy. Fortunately, there are a bunch of crazy
+people out there that provided us with good tools to handle tough stuff. One of
+such tools is [mkcert][k], to generate and install a certificate chain. This
+should allow one to perform transparent proxying properly.
+
 
 
 [c]: https://git.lattuga.net/boyska/circolog
@@ -46,3 +53,4 @@ For the client interface, I have very clearly in mind the UX from
 [c1]: https://github.com/spf13/cobra
 [c2]: https://github.com/spf13/viper
 [p]: https://github.com/bettercap/bettercap
+[k]: https://github.com/FiloSottile/mkcert
