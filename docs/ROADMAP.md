@@ -3,7 +3,7 @@
 Let's try to produce something in steps:
 
  - [x] Simple HTTP proxy that logs all requests/responses
- - [ ] Simple CLI for the server, to specify some connection parameters
+ - [x] Simple CLI for the server, to specify some connection parameters
  - [ ] Expose the captured data via websocket
  - [ ] A simple client to read and pipe through a pager data from the server
  - [ ] Filter the requests/responses using some config-provided expression
