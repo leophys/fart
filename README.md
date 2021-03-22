@@ -47,6 +47,23 @@ The core should also expose the possibility to:
 
 Burp Suite is great, but it's closed source and we love open source.
 
+## Usage
+
+The application in this repository is a cli, called `fart`, with the following
+verbs:
+
+  - [ ] `fart serve`: spin up a server instance
+  - [ ] `fart tui`: start an interactive user interface
+
+### `fart serve`
+
+This subcommand starts the instance of a server and binds two sockets:
+
+ - [ ] a proxy socket, where it behaves as an HTTP proxy
+ - [ ] a websocket to expose the captured data to a client
+ - [ ] a control socket, to control the internal state of the server from
+   another program (likely the cli)
+
 ## Questions
 
 You can open an issue here, or drop an email at `blallo -|AT|- autistici[.]org`
