@@ -59,7 +59,7 @@ verbs:
 
 This subcommand starts the instance of a server and binds two sockets:
 
- - [ ] a proxy socket, where it behaves as an HTTP proxy
+ - [x] a proxy socket, where it behaves as an HTTP proxy
  - [ ] a websocket to expose the captured data to a client
  - [ ] a control socket, to control the internal state of the server from
    another program (likely the cli)
