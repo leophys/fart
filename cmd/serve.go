@@ -37,4 +37,8 @@ func init() {
 	serveCmd.Flags().StringVarP(&params.BindAddr, "proxy-addr", "p", ":8080", "Address to bind the proxy server to")
 	serveCmd.Flags().StringVarP(&params.CtrlAddr, "ctrl-addr", "c", ":51324", "Address to bind the control socket to")
 	serveCmd.Flags().StringVarP(&params.WebsocketAddr, "websocket", "w", ":51325", "Address to bind the websocket to")
+
+	// Whitelist has priority to blacklist. If defined blacklist is ignored
+	serveCmd.Flags().StringSliceVarP(&params.WhitelistTarget, "whitelist", "W", []string{}, "List of address you want to proxy")
+	serveCmd.Flags().StringSliceVarP(&params.BlacklistTarget, "blacklist", "B", []string{}, "List of address you don't want to proxy. Note that if you have defined whitelist flag this flag will be ignored")
 }
